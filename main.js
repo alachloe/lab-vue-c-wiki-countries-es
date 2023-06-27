@@ -3,7 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import "bootstrap/dist/css/bootstrap.css";
 
+const app = createApp(App);
 
-createApp(App).use(router).mount("#app");
+app.use(router);
 
-createApp(App).mount("#app");
+app.mount("#app");
